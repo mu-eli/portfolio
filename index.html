@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio showcasing landing pages, dashboards, and databases designed and coded by Eliud Muwowo."
+    />
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
+    "
+    ></script>
+
+    <script defer src="script.js"></script>
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Eliud Muwowo Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <ul class="main-nav--list">
+          <li class="main-nav--link">
+            <a href="index.html" id="about" onclick="setActive('about')"
+              >About</a
+            >
+          </li>
+          <li class="main-nav--link">
+            <a
+              href="experience.html"
+              id="experience"
+              onclick="setActive('experience')"
+              >Experience</a
+            >
+          </li>
+          <li class="main-nav--link">
+            <a href="work.html" id="work" onclick="setActive('work')">Work</a>
+          </li>
+          <li class="main-nav--link">
+            <a href="#footer" id="contact" onclick="setActive('contact')"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile--nav">
+        <ion-icon name="menu-outline" class="icon-mobile--nav"></ion-icon>
+        <ion-icon name="close-outline" class="icon-mobile--nav"></ion-icon>
+      </button>
+    </header>
+
+    <section class="hero-section container">
+      <div class="hero-box">
+        <h1 class="hero-heading">
+          Hi, I am Eliud,<br />Front-end Developer & Data Scientist
+        </h1>
+        <p class="hero-text">
+          who loves turning data into insights and creating user-friendly web
+          solutions. I’ve worked on projects like building landing pages,
+          dashboards, and database systems, always with a focus on simplicity
+          and efficiency. With a passion for both data and design, I enjoy
+          finding creative ways to solve problems and deliver results. When I’m
+          not coding or analyzing data, I’m usually exploring new tech and
+          staying up-to-date with industry trends.
+        </p>
+        <a href="Resume.pdf" download class="btn">Download Resume</a>
+      </div>
+
+      <div class="hero-img">
+        <img src="img/hero-img.png" alt="An image of Eliud" />
+      </div>
+    </section>
+
+    <section class="featured-comp--section">
+      <p class="subheading container">Experience</p>
+      <div class="featured-company">
+        <div class="featured-exp">
+          <img src="logos/ingilzcekursu.png" alt="İngilizce kursu logo" />
+          <div class="featured-comp--exp">
+            <span>2022 - Present</span>
+            <p class="featured-comp--text">
+              <strong>English Proficiency Instructor </strong>
+            </p>
+            <p class="featured-comp--name">İngilizcekursu.com</p>
+          </div>
+        </div>
+
+        <div class="featured-exp">
+          <img src="logos/beats.png" alt="Beats by Dre logo" />
+          <div class="featured-comp--exp">
+            <span>08/2024 - 09/2024</span>
+            <p class="featured-comp--text">
+              <strong> Consumer Insights</strong>
+            </p>
+            <p class="featured-comp--name">Beats by Dre</p>
+          </div>
+        </div>
+
+        <div class="featured-exp">
+          <img src="logos/paramount.jpeg" alt="Paramount Students logo" />
+          <div class="featured-comp--exp">
+            <span>04/2024 - 08/2024</span>
+            <p class="featured-comp--text">
+              <strong> Performance Team Lead</strong>
+            </p>
+            <p class="featured-comp--name">Paramount Students</p>
+          </div>
+        </div>
+
+        <div class="featured-exp">
+          <img src="logos/integra.jpeg" alt="Integra96 company logo" />
+          <div class="featured-comp--exp">
+            <span>08/2023 - 10/2023</span>
+            <p class="featured-comp--text">
+              <strong>Business Development Assistant</strong>
+            </p>
+            <p class="featured-comp--name">
+              Integra96 International Certification & Test Services
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-featured-works container">
+      <p class="heading">Featured works</p>
+
+      <div class="featured-work">
+        <div class="work-img">
+          <img src="img/coding.png" alt="image of a computer showing code" />
+        </div>
+        <div class="work-details">
+          <a href="work.html#landing" class="work-title">Landing Pages</a>
+          <div class="work">
+            <p class="work-type">Web Design</p>
+          </div>
+          <p class="work-text">
+            Created responsive, user-friendly landing pages with a focus on
+            clean design and fast performance. Ensured they worked smoothly
+            across different devices.
+          </p>
+        </div>
+
+        <div class="work-img">
+          <img src="img/dashboard.png" alt="Image of a designed dashboard" />
+        </div>
+        <div class="work-details">
+          <a href="work.html#dashboards" class="work-title"
+            >Designing Dashboards</a
+          >
+          <div class="work">
+            <p class="work-type">Dashboard</p>
+          </div>
+          <p class="work-text">
+            Developed interactive dashboards to help visualize important data in
+            real-time. Made sure the designs were easy to understand and use for
+            better decision-making.
+          </p>
+        </div>
+
+        <div class="work-img">
+          <img src="img/databse.png" alt="Image showcasing a database" />
+        </div>
+
+        <div class="work-details">
+          <a href="work.html#databases" class="work-title"
+            >Designing Databases</a
+          >
+          <div class="work">
+            <p class="work-type">Database</p>
+          </div>
+          <p class="work-text">
+            Designed efficient, scalable databases to handle large amounts of
+            data. Focused on keeping them fast, reliable, and ready for
+            high-demand situations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer container">
+      <div class="links">
+        <ul class="link-icons">
+          <li class="icon-style">
+            <a
+              href="https://www.linkedin.com/in/eliud-muwowo-154180bb/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><ion-icon name="logo-linkedin" class="ion-icon--link"></ion-icon
+            ></a>
+          </li>
+          <li class="icon-style">
+            <a
+              href="https://github.com/mu-eli"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><ion-icon name="logo-github" class="ion-icon--link"></ion-icon
+            ></a>
+          </li>
+          <li class="icon-style">
+            <a
+              href="mailto:eliudmuwowo@gmail.com"
+              aria-label="Email Eliud Muwowo"
+              ><ion-icon name="mail-outline" class="ion-icon--link"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <p class="copyright">
+        &copy;<span class="year">2025</span> by Eliud Muwowo
+      </p>
+    </footer>
+  </body>
+</html>

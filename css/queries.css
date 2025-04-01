@@ -1,0 +1,194 @@
+/************************************/
+/* BELOW 1201px (Tablet Landscape)*/
+/************************************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/************************************/
+/* BELOW 896px (Tablet Portrait) */
+/************************************/
+
+@media (max-width: 56em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/************************************/
+/* BELOW 720px */
+/************************************/
+
+@media (max-width: 50em) {
+  .hero-heading {
+    font-size: 3.8rem;
+  }
+
+  .hero-text {
+    font-size: 1.8rem;
+  }
+
+  .main-nav--list {
+    gap: 4.8rem;
+  }
+
+  .btn {
+    font-size: 2rem;
+  }
+
+  .hero-section,
+  .section-featured-works,
+  .featured-comp--section,
+  .experience-section,
+  .volunteer-section,
+  .education-section,
+  .certification-section,
+  .work-section,
+  .secondary-nav {
+    padding: 0 4.4rem;
+  }
+}
+
+/************************************/
+/* BELOW 720px */
+/************************************/
+
+@media (max-width: 37em) {
+  .header {
+    padding: 4.4rem;
+  }
+
+  .btn-mobile--nav {
+    display: inline-block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile--nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile--nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav--list {
+    flex-direction: column;
+    gap: 3.2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .main-nav--list a {
+    font-size: 3.6rem;
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  }
+
+  .hero-img {
+    grid-row: 1 / 2;
+  }
+
+  .hero-heading {
+    font-size: 3.2rem;
+  }
+
+  .featured-comp--section {
+    padding: 0 4.4rem 3.6rem;
+  }
+
+  .featured-company {
+    grid-template-columns: 1fr;
+    padding-bottom: 0;
+  }
+
+  .featured-work {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-section {
+    margin-bottom: 4rem;
+  }
+
+  .company-info {
+    gap: 3.2rem;
+  }
+
+  .grid-2--cols {
+    grid-template-columns: 1fr;
+    row-gap: 3.2rem;
+  }
+
+  .volunteer-section {
+    margin-bottom: 4rem;
+  }
+
+  .education-section {
+    margin-bottom: 7.2rem;
+  }
+
+  .education {
+    grid-template-columns: 1fr;
+    row-gap: 2.8rem;
+    padding: 3.2rem 0 0;
+  }
+
+  .certification-details:last-child {
+    padding-bottom: 0;
+  }
+
+  .secondary-nav {
+    gap: 2rem;
+  }
+
+  nav button {
+    padding: 0.7rem 1.4rem;
+    font-size: 1.4rem;
+  }
+
+  .footer {
+    margin-top: 7.2rem;
+  }
+
+  .link-icons {
+    gap: 3.6rem;
+    margin-bottom: 3.6rem;
+  }
+
+  .ion-icon--link {
+    width: 4.4rem;
+    height: 4.4rem;
+  }
+}

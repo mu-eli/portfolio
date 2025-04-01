@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio showcasing landing pages, dashboards, and databases designed and coded by Eliud Muwowo."
+    />
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
+  "
+    ></script>
+
+    <script defer src="script.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Eliud Muwowo Featured Projects</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <ul class="main-nav--list">
+          <li class="main-nav--link" id="about">
+            <a href="index.html">About</a>
+          </li>
+          <li class="main-nav--link">
+            <a href="experience.html" id="experience">Experience</a>
+          </li>
+          <li class="main-nav--link">
+            <a href="work.html" id="work" class="active">Work</a>
+          </li>
+          <li class="main-nav--link">
+            <a href="#footer" id="contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-mobile--nav">
+        <ion-icon name="menu-outline" class="icon-mobile--nav"></ion-icon>
+        <ion-icon name="close-outline" class="icon-mobile--nav"></ion-icon>
+      </button>
+    </header>
+
+    <section class="container">
+      <nav class="secondary-nav">
+        <button
+          class="active"
+          data-section="landing"
+          onclick="showSection('landing', this)"
+        >
+          Landing Pages
+        </button>
+        <button
+          data-section="dashboards"
+          onclick="showSection('dashboards', this)"
+        >
+          Dashboards
+        </button>
+        <button
+          data-section="databases"
+          onclick="showSection('databases', this)"
+        >
+          Databases
+        </button>
+      </nav>
+    </section>
+
+    <section class="work-section container">
+      <p class="heading">Works</p>
+      <div id="landing" class="section active">
+        <div class="featured-work">
+          <div class="work-img">
+            <img
+              src="img/onmifood.png"
+              alt="Omnifood responsive landing page design image"
+            />
+          </div>
+          <div class="work-box">
+            <p class="work-title">Landing Pages</p>
+            <div class="work">
+              <p class="work-year">2025</p>
+              <p class="work-type">Web Design</p>
+            </div>
+            <p class="description-text">
+              I developed a responsive landing page for Omnifood, translating a
+              design into a fully functional webpage using HTML5, CSS3 (with
+              flex and grid layouts), and JavaScript. The page is optimized to
+              work seamlessly across all devices, from mobile devices to large
+              desktop screens.
+            </p>
+            <a href="https://omnifood-elimu.netlify.app/" target="_blank"
+              >visit website &rarr;</a
+            >
+          </div>
+        </div>
+
+        <div class="featured-work">
+          <div class="work-img">
+            <img
+              src="img/talkhub.png"
+              alt="talkhub responsive landing page design image"
+            />
+          </div>
+          <div class="work-box">
+            <p class="work-title">Designing Dashboards</p>
+            <div class="work">
+              <p class="work-year">2025</p>
+              <p class="work-type">Web Design</p>
+            </div>
+            <p class="description-text">
+              I developed a responsive landing page for Talkhub, translating a
+              Figma design into a fully functional webpage using HTML, CSS (with
+              flex and grid layouts), and JavaScript. The page is optimized to
+              work seamlessly across all devices, from mobile devices to large
+              desktop screens.
+            </p>
+            <a href="https://talkhub-eng.netlify.app/" target="_blank"
+              >visit website &rarr;</a
+            >
+          </div>
+        </div>
+
+        <div class="featured-work">
+          <div class="work-img">
+            <img
+              src="img/legacy.png"
+              alt="A legacy company responsive landing page design"
+            />
+          </div>
+
+          <div class="work-box">
+            <p class="work-title">Designing Databases</p>
+            <div class="work">
+              <p class="work-year">2024</p>
+              <p class="work-type">Web Design</p>
+            </div>
+            <p class="description-text">
+              I developed a responsive concept landing page for the Zambian
+              brand Legacy.
+            </p>
+            <a href="https://legacy-manf-ltd.netlify.app/" target="_blank"
+              >visit website &rarr;</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div id="dashboards" class="section">
+        <div class="featured-work">
+          <div class="work-img">
+            <img
+              src="img/individual.png"
+              alt="Individual performance dashboard image"
+            />
+          </div>
+
+          <div class="work-box">
+            <p class="work-title">Individual Performance Dashboard</p>
+            <div class="work">
+              <p class="work-year">2024</p>
+              <p class="work-type">Dashboard</p>
+            </div>
+            <p class="description-text">
+              Paramount students' recruitment team performance using
+              spreadsheets to create datasets + data transformation and modeling
+              in Power BI + displaying performance changes on a dashboard under
+              specific KPIs.
+            </p>
+          </div>
+        </div>
+
+        <div class="featured-work">
+          <div class="work-img">
+            <img src="img/team.png" alt="Team performance dashboard image" />
+          </div>
+
+          <div class="work-box">
+            <p class="work-title">Recruitment Team Performance Dashboard</p>
+            <div class="work">
+              <p class="work-year">2024</p>
+              <p class="work-type">Dashboard</p>
+            </div>
+            <p class="description-text">
+              Paramount students' recruitment team performance using
+              spreadsheets to create datasets + data transformation and modeling
+              in Power BI + displaying performance changes on a dashboard under
+              specific KPIs.
+            </p>
+          </div>
+        </div>
+
+        <div class="featured-work">
+          <div class="work-img">
+            <img src="img/sales.png" alt="Sales dashboard of vehicles" />
+          </div>
+
+          <div class="work-box">
+            <p class="work-title">Classic Car Models Sales Dashboard</p>
+            <div class="work">
+              <p class="work-year">2024</p>
+              <p class="work-type">Dashboard</p>
+            </div>
+            <p class="description-text">
+              Classic car models sales using MySQL to create datasets + data
+              transformation and modeling in Tableau + displaying sales changes
+              on a dashboard under specific KPIs.
+            </p>
+            <a
+              href="https://public.tableau.com/app/profile/eliud.muwowo/viz/SalesOverview_17243244517650/SalesDashboard"
+              target="_blank"
+              >visit website &rarr;</a
+            >
+          </div>
+        </div>
+
+        <div class="featured-work">
+          <div class="work-img">
+            <img
+              src="img/ev-analysis.png"
+              alt="Dashboard of electronic vehicle sales in Washington"
+            />
+          </div>
+
+          <div class="work-box">
+            <p class="work-title">Electric Vehicle Data for Washington</p>
+            <div class="work">
+              <p class="work-year">2024</p>
+              <p class="work-type">Dashboard</p>
+            </div>
+            <p class="description-text">
+              Electric vehicle data for Washington using spreadsheets to create
+              datasets + data transformation and modeling in Tableau +
+              displaying vehicle popularity changes on a dashboard under
+              specific KPIs.
+            </p>
+            <a
+              href="https://public.tableau.com/app/profile/eliud.muwowo/viz/VehicleDashboard_17241071864330/Dashboard1_1"
+              target="_blank"
+              >visit website &rarr;</a
+            >
+          </div>
+        </div>
+
+        <div class="featured-work">
+          <div class="work-img">
+            <img src="img/bike.png" alt="Dashboard showing bike sales" />
+          </div>
+
+          <div class="work-box">
+            <p class="work-title">Bike Sales Dashboard</p>
+            <div class="work">
+              <p class="work-year">2024</p>
+              <p class="work-type">Dashboard</p>
+            </div>
+            <p class="description-text">
+              Bike sales using spreadsheets to create datasets + data
+              transformation and modeling in Tableau + displaying sales changes
+              on a dashboard under specific KPIs.
+            </p>
+            <a
+              href="https://public.tableau.com/app/profile/eliud.muwowo/viz/BikeSales_17241967165680/SalesDashboard"
+              target="_blank"
+              >visit website &rarr;</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div id="databases" class="section">
+        <div class="featured-work">
+          <div class="work-img">
+            <img
+              src="img/classic.png"
+              alt="ER diagram of a classic model database image"
+            />
+          </div>
+
+          <div class="work-box">
+            <p class="work-title">Food Company Database</p>
+            <div class="work">
+              <p class="work-year">2024</p>
+              <p class="work-type">Database</p>
+            </div>
+            <p class="description-text">
+              I developed a database for classic car models using MySQL
+              workbench. Here the partially visible ER diagram illustrates the
+              relationship between different entities.
+            </p>
+          </div>
+        </div>
+
+        <div class="featured-work">
+          <div class="work-img">
+            <img
+              src="img/food.png"
+              alt="ER diagram of a food company database image"
+            />
+          </div>
+
+          <div class="work-box">
+            <p class="work-title">Classic Car Models Database</p>
+            <div class="work">
+              <p class="work-year">2025</p>
+              <p class="work-type">Database</p>
+            </div>
+            <p class="description-text">
+              I developed a database for a food company using MySQL workbench.
+              Here the ER diagram illustrates the relationship between different
+              entities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer container">
+      <div class="links">
+        <ul class="link-icons">
+          <li class="icon-style">
+            <a
+              href="https://www.linkedin.com/in/eliud-muwowo-154180bb/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><ion-icon name="logo-linkedin" class="ion-icon--link"></ion-icon
+            ></a>
+          </li>
+          <li class="icon-style">
+            <a
+              href="https://github.com/mu-eli"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><ion-icon name="logo-github" class="ion-icon--link"></ion-icon
+            ></a>
+          </li>
+          <li class="icon-style">
+            <a
+              href="mailto:eliudmuwowo@gmail.com"
+              aria-label="Email Eliud Muwowo"
+              ><ion-icon name="mail-outline" class="ion-icon--link"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <p class="copyright">
+        &copy;<span class="year">2025</span> by Eliud Muwowo
+      </p>
+    </footer>
+  </body>
+</html>
